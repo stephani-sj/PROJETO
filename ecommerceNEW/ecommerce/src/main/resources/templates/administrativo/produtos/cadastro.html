@@ -56,10 +56,13 @@
 						<!-- Categoria -->
 						<div class="form-row">
 						<div class="form-group col-md-6">
-							<label for="salario">Categoria</label> <input type="text"
-								class="form-control" id="proCategoria" placeholder="Categoria"
-								data-mask-reverse="true" th:field="*{proCategoria}" value=""/>
-							<div class="invalid-feedback"></div>
+							<label for="salario">Categoria</label> 
+								<select  class="form-select" aria-label="Default select example" th:field="*{proCategoria}" >
+								
+   						    	<option th:value="Cosméticos" th:text="Cosméticos"></option>
+   						 		<option th:value="Perfumaria" th:text="Perfumaria"></option>
+   								<option th:value="Saude" th:text="Saúde"></option>
+								</select>
 						</div>
 					</div>
 					
